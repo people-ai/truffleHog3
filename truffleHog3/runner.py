@@ -60,6 +60,4 @@ def run(config: argparse.Namespace) -> List[Issue]:
         cli.copy(source_dir, tmp)
         issues.extend(cli.scan(tmp, config_obj, rules))
 
-    print(json.dumps(issues, indent=2))
-
     return issues
