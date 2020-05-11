@@ -11,7 +11,7 @@ README = (HERE / "README.md").read_text()
 setup(
     name="pai-truffleHog3",
     version="2.0.1.1",
-    packages=["pai-truffleHog3", "pai-truffleHog3.lib"],
+    packages=["truffleHog3", "truffleHog3.lib"],
     license="GNU",
     description="Find secrets in your codebase.",
     long_description=README,
