@@ -9,7 +9,7 @@ from truffleHog3.lib import log, utils
 from truffleHog3.types import Issue, Config
 
 
-def get_config(dir_source: str,
+def get_config(source_dir: str,
                rules_file: str,
                branch=None,
                config=None,
@@ -42,7 +42,7 @@ def get_config(dir_source: str,
                               since_commit=since_commit,
                               skip_paths=skip_paths,
                               skip_strings=skip_strings,
-                              source=[dir_source],
+                              source=[source_dir],
                               verbose=verbose)
 
 
