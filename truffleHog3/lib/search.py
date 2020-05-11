@@ -48,6 +48,7 @@ class Engine(ABC):
                 if self.should_skip(match, line, issue["path"]):
                     continue
                 found[reason].add(line)
+                matches[reason].add(match)
 
         return [
             dict(issue, reason=k, stringsFound=list(found[k]), matchesFound=list(matches[k])) for k in found
